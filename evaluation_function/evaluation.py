@@ -29,5 +29,7 @@ def evaluation_function(
     to output the evaluation response.
     """
     result = Result(is_correct=response == answer)
-    result.add_feedback(feedback="You can go play now" if result.is_correct else "Are you not studying?")
+    result.add_feedback(
+        feedback="You can go play now" if result.is_correct else "Are you not studying?",
+        tag="own")
     return result
