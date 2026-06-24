@@ -28,7 +28,7 @@ def evaluation_function(
     return types and that evaluation_function() is the main function used
     to output the evaluation response.
     """
+    result = Result(is_correct=response == answer)
+    result.add_feedback("Hello World!")
 
-    return Result(
-        is_correct=response == answer
-    )
+    return result
