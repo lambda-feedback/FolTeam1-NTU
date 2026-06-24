@@ -1,4 +1,4 @@
-from typing import Any
+kfrom typing import Any
 from lf_toolkit.evaluation import Result, Params
 
 def evaluation_function(
@@ -29,5 +29,5 @@ def evaluation_function(
     to output the evaluation response.
     """
     result = Result(is_correct=response == answer)
-    result.add_feedback("You can go play now" if result.is_correct else "Are you not studying?")
+    result.add_feedback(feedback="You can go play now" if result.is_correct else "Are you not studying?")
     return result
