@@ -29,6 +29,6 @@ def evaluation_function(
     to output the evaluation response.
     """
     result = Result(is_correct=response == answer)
-    result.add_feedback(feedback="Hello World!", tag='test')
+    result.add_feedback(feedback="You good?", tag='test')
 
     return result
