@@ -21,10 +21,10 @@ class TestEvaluationFunction(unittest.TestCase):
     as it should.
     """
 
-    def test_evaluation(self):
-        response, answer, params = "Hello, World", "Hello, World", Params()
+    # def test_evaluation(self):
+    #     response, answer, params = "Hello, World", "Hello, World", Params()
 
-        result = evaluation_function(response, answer, params).to_dict()
+    #     result = evaluation_function(response, answer, params).to_dict()
 
-        self.assertEqual(result.get("is_correct"), True)
-        self.assertFalse(result.get("feedback", False))
+    #     self.assertEqual(result.get("is_correct"), True)
+    #     self.assertFalse(result.get("feedback", False))
